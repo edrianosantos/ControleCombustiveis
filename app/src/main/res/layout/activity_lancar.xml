@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="br.com.edrsantos.controlecombustivel.activitys.LancarAbastecimentoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Código do Combustível:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtCodigoPesquisa"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:imeOptions="actionSearch"
+            android:maxLength="5"/>
+
+        <Button
+            android:id="@+id/btnPesquisa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="pesquisar"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Cidade de Abastecimento:"/>
+
+    <EditText
+        android:id="@+id/edtCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:maxLength="30"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Quantidade Litros:"/>
+
+    <EditText
+        android:id="@+id/edtQtdLitros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:maxLength="30"/>
+
+    <Button
+        android:id="@+id/btnIncluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incluir Registro"/>
+
+</LinearLayout>
